@@ -1,0 +1,28 @@
+{
+	"coc.preferences.formatOnSaveFiletypes": [
+		"javascript",
+		"typescript",
+		"typescriptreact",
+		"json",
+		"html",
+		"javascriptreact",
+		"css"
+	],
+
+	// prettier config
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"prettier.trailingComma": "all",
+	"prettier.printWidth": 100,
+
+	// suggest config
+	"suggest.enablePreselect": true,
+	"suggest.noselect": false,
+	"suggest.maxCompleteItemCount": 15,
+
+	// python config
+	"python.linting.enabled": true,
+	"python.linting.pylintEnabled": true,
+
+	"snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/utils/snips"]
+}

@@ -1,0 +1,9 @@
+source $HOME/.config/nvim/vim-plug/plugins.vim
+source $HOME/.config/nvim/config/coc/coc.vim
+source $HOME/.config/nvim/config/airline/airline.vim
+source $HOME/.config/nvim/config/general/general.vim
+source $HOME/.config/nvim/config/theme/theme.vim
+source $HOME/.config/nvim/config/devicons/devicons.vim
+source $HOME/.config/nvim/config/emmet/emmet.vim
+source $HOME/.config/nvim/config/rnvimr/rnvimr.vim
+source $HOME/.config/nvim/config/coc/coc-extentions.vim
