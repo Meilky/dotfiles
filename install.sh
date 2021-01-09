@@ -13,8 +13,10 @@ sudo apt install -y \
 	i3lock-fancy \
 	macchanger \
 	mitmproxy \
+	mpc \
 	mpd \
 	ncmpcpp \
+	ncurse-term \
 	neofetch \
 	net-tools \
 	nitrogen \
@@ -24,6 +26,7 @@ sudo apt install -y \
 	openjdk-13-jdk \
 	openjdk-13-jre \
 	picom \
+	polybar \
 	python2 \
 	python3 \
 	python3-pip \
@@ -102,6 +105,5 @@ fi;
 echo "----- Install script"
 
 bash ~/.config/install.sh
-
 
 echo "---- Congradulation, you can now use the best config ----"
