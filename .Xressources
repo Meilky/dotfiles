@@ -18,3 +18,13 @@
 *color15:  #FAFAFA
 
 Xcursor.size: 22
+
+xterm*faceName: FiraCode Nerd Font
+xterm*faceSize: 16
+
+xterm*savelines: 10000
+
+xterm*rightScrollBar: true
+xterm*ScrollBar: true
+
+xterm*scrollTtyOutput: false

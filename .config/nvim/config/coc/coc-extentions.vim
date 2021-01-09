@@ -25,6 +25,7 @@ if match(&rtp, 'coc.nvim') >= 0
         \ 'coc-snippets',
         \ 'coc-emmet',
         \ 'coc-prettier',
+		\ 'coc-pairs',
         \ ]
 
     let s:extensions = s:languages + s:frameworks + s:linters + s:utils

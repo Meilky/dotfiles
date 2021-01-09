@@ -9,12 +9,12 @@ sudo apt install -y \
 	evolution \
 	git \
 	grub2 \
-	i3 \
 	i3-gaps \
 	i3lock-fancy \
-	lollypop \
 	macchanger \
 	mitmproxy \
+	mpd \
+	ncmpcpp \
 	neofetch \
 	net-tools \
 	nitrogen \
@@ -36,9 +36,41 @@ sudo apt install -y \
 	zsh \
 	zsh-syntax-highlighting
 
+echo "----- Copy .config to ~/.config"
+
+if [ -d "${HOME}/.config" ]; then
+	mv $HOME/.config $HOME/.config-old
+fi;
+
+cp -r .config ~/
+
+if [ -f "${HOME}/.Xressources" ]; then
+	mv $HOME/.Xressources $HOME/.Xressources-old
+fi;
+
+cp .Xressources ~/
+
+if [ -f "${HOME}/.xsession" ]; then
+	mv $HOME/.xsession $HOME/.xsession-old
+fi;
+
+cp .xsession ~/
+
+if [ -f "${HOME}/.zshrc" ]; then
+	mv $HOME/.zshrc $HOME/.zshrc-old
+fi;
+
+cp .zshrc ~/
+
+if [ -d "${HOME}/.mpd" ]; then
+	mv $HOME/.mpd $HOME/.mpd-old
+fi;
+
+cp .mpd ~/
+
 echo "----- Install nvm"
 
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
 source ~/.nvm/nvm.sh
 
@@ -56,4 +88,20 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-./.config/nvim/install.sh
+echo "----- Installing NerdFonts"
+
+if [-d "$HOME/.local/share/fonts/NerdFonts/" ]; then
+	echo "----- NerdFonts is already install"
+else
+	git clone https://github.com/ryanoasis/nerd-fonts ~/.tmp
+	cd ~/.tmp
+	./install.sh
+	sudo rm -r ~/.tmp
+fi;
+
+echo "----- Install script"
+
+bash ~/.config/install.sh
+
+
+echo "---- Congradulation, you can now use the best config ----"

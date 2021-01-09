@@ -12,4 +12,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 		Plug 'epilande/vim-react-snippets'
 		" File manager
 		Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+		
+		Plug 'sheerun/vim-polyglot'
 call plug#end()
