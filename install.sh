@@ -30,6 +30,7 @@ sudo apt install -y \
 	python2 \
 	python3 \
 	python3-pip \
+	python3-jedi \
 	realtek-rtl88xxau-dkms \
 	ssh \
 	tmux \

@@ -2,7 +2,6 @@
 
 echo "----- Installing jedi and pylint for python"
 
-sudo apt install python3-jedi -y
 pip3 install jedi
 pip3 install pylint
 

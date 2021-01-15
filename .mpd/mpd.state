@@ -1,0 +1,96 @@
+sw_volume: 40
+audio_device_state:1:My HTTP Stream
+audio_device_state:1:My Pulse Output
+audio_device_state:1:mpd_fifo
+state: pause
+current: 74
+time: 120.889000
+random: 1
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Lil Peep/California Girls/Beat It.mp3
+1:Lil Peep/California Girls/Beamer Boy.mp3
+2:Lil Peep/California Girls/Lil Kennedy.mp3
+3:Lil Peep/Castles/White Wine.mp3
+4:Lil Peep/Castles II/Witchblades.mp3
+5:Lil Peep/Castles II/Favorite Dress.mp3
+6:Lil Peep/Come Over When You Are Sober Pt 1/Benz Truck.mp3
+7:Lil Peep/Come Over When You Are Sober Pt 1/Awful Things.mp3
+8:Lil Peep/Come Over When You Are Sober Pt 1/U Said.mp3
+9:Lil Peep/Come Over When You Are Sober Pt 1/Better Of (Dying).mp3
+10:Lil Peep/Come Over When You Are Sober Pt 1/The Brightside.mp3
+11:Lil Peep/Come Over When You Are Sober Pt 2/Leanin'.mp3
+12:Lil Peep/Come Over When You Are Sober Pt 2/Sunlight On Your Skin.mp3
+13:Lil Peep/Come Over When You Are Sober Pt 2/Broken Smile.mp3
+14:Lil Peep/Come Over When You Are Sober Pt 2/Runaway.mp3
+15:Lil Peep/Come Over When You Are Sober Pt 2/Sex With My Ex.mp3
+16:Lil Peep/Come Over When You Are Sober Pt 2/Cry Alone.mp3
+17:Lil Peep/Come Over When You Are Sober Pt 2/Life Is Beautiful.mp3
+18:Lil Peep/Come Over When You Are Sober Pt 2/Hate Me.mp3
+19:Lil Peep/Come Over When You Are Sober Pt 2/IDGAF.mp3
+20:Lil Peep/Come Over When You Are Sober Pt 2/White Girl.mp3
+21:Lil Peep/Come Over When You Are Sober Pt 2/Fingers.mp3
+22:Lil Peep/Come Over When You Are Sober Pt 2/Falling Down.mp3
+23:Lil Peep/crybaby/Crybaby.mp3
+24:Lil Peep/crybaby/Lil Jeep.mp3
+25:Lil Peep/crybaby/Absolute In Doubt.mp3
+26:Lil Peep/crybaby/Nineteen.mp3
+27:Lil Peep/crybaby/White Tee.mp3
+28:Lil Peep/EVERYBODY'S EVERYTHING/Text Me.mp3
+29:Lil Peep/EVERYBODY'S EVERYTHING/Moving On.mp3
+30:Lil Peep/EVERYBODY'S EVERYTHING/Belgium.mp3
+31:Lil Peep/EVERYBODY'S EVERYTHING/When I Lie.mp3
+32:Lil Peep/EVERYBODY'S EVERYTHING/Ive Been Waiting.mp3
+33:Lil Peep/EVERYBODY'S EVERYTHING/Live Forever.mp3
+34:Lil Peep/EVERYBODY'S EVERYTHING/White Tee.mp3
+35:Lil Peep/EVERYBODY'S EVERYTHING/Witchblades.mp3
+36:Lil Peep/GOTH ANGEL SINNER/Moving On.mp3
+37:Lil Peep/GOTH ANGEL SINNER/Belgium.mp3
+38:Lil Peep/GOTH ANGEL SINNER/When I Lie.mp3
+39:Lil Peep/HELLBOY/Hellboy.mp3
+40:Lil Peep/HELLBOY/Cobain.mp3
+41:Lil Peep/HELLBOY/Girls.mp3
+42:Lil Peep/LIVE FOREVER/Angeldust.mp3
+43:Lil Peep/LIVE FOREVER/Nuts.mp3
+44:Lil Peep/remix/Beamerboy remix.mp3
+45:Lil Peep/singles/Star Shopping.mp3
+46:Lil Peep/Teen Romance/Teen Romance.mp3
+47:Lil Peep/Teen Romance/Suck My Blood.mp3
+48:Night Lovell/Straight From Hell.mp3
+49:Night Lovell/Concept Vague/Concept Nothing.mp3
+50:Night Lovell/Concept Vague/Live Television.mp3
+51:Night Lovell/Concept Vague/Beneath.mp3
+52:Night Lovell/Concept Vague/Sometimes Not Serious.mp3
+53:Night Lovell/Concept Vague/The Renegade Never Dies.mp3
+54:Night Lovell/Concept Vague/Off Air.mp3
+55:Night Lovell/Concept Vague/Forget About Me.mp3
+56:Night Lovell/Concept Vague/Dead Lovell.mp3
+57:Night Lovell/Concept Vague/Light From The Car.mp3
+58:Night Lovell/Concept Vague/Material Female.mp3
+59:Night Lovell/Concept Vague/Trees Of The Valley.mp3
+60:Night Lovell/Concept Vague/Questioning Your Theory.mp3
+61:Night Lovell/Concept Vague/Deira City Center.mp3
+62:Night Lovell/Concept Vague/Dark Light.mp3
+63:Night Lovell/GOODNIGHT LOVELL/MARY JANE.mp3
+64:Night Lovell/GOODNIGHT LOVELL/BAD KID.mp3
+65:Night Lovell/GOODNIGHT LOVELL/LET ME DIE.mp3
+66:Night Lovell/GOODNIGHT LOVELL/WATCH ME.mp3
+67:Night Lovell/GOODNIGHT LOVELL/JOAN OF ARC.mp3
+68:Night Lovell/Red Teenager/Boy Red.mp3
+69:Night Lovell/Red Teenager/Rideau Swing.mp3
+70:Night Lovell/Red Teenager/Contraband.mp3
+71:Night Lovell/Red Teenager/I'm Okay.mp3
+72:Night Lovell/Red Teenager/Barbie Doll.mp3
+73:Night Lovell/Red Teenager/Guidance.mp3
+74:Night Lovell/Red Teenager/Problems.mp3
+75:Night Lovell/Red Teenager/Riot Ballad.mp3
+76:Night Lovell/Red Teenager/Still Cold.mp3
+77:Night Lovell/Red Teenager/Just Tryna.mp3
+78:Night Lovell/Red Teenager/Yen.mp3
+79:Night Lovell/Red Teenager/Teenage Cutie.mp3
+playlist_end
