@@ -76,7 +76,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -222,9 +222,9 @@ exec_always killall nitrogen
 
 exec_always --no-startup-id setxkbmap -layout us,ca -variant qwerty -option grp:alt_shift_toggle
 
-exec_always --no-startup-id polybar purify-bar
+exec_always --no-startup-id bash ~/.config/polybar/launch.sh
 
-exec_always --no-startup-id conky -c ~/.config/conky/conky-fsociety/fsocietyrc 
+exec_always --no-startup-id conky -c ~/.config/conky/conkyrc 
 
 exec_always --no-startup-id mpd
 

@@ -5,18 +5,17 @@ sudo apt install -y \
 	apache2 \
 	apt-transport-https \
 	conky \
+	lua5.3 \
 	curl \
-	evolution \
 	git \
 	grub2 \
 	i3-gaps \
-	i3lock-fancy \
+	kitty \
 	macchanger \
 	mitmproxy \
 	mpc \
 	mpd \
 	ncmpcpp \
-	ncurse-term \
 	neofetch \
 	net-tools \
 	nitrogen \
@@ -26,12 +25,11 @@ sudo apt install -y \
 	openjdk-13-jdk \
 	openjdk-13-jre \
 	picom \
-	polybar \
 	python2 \
 	python3 \
 	python3-pip \
 	python3-jedi \
-	realtek-rtl88xxau-dkms \
+	ranger \
 	ssh \
 	tmux \
 	tor \
@@ -70,7 +68,7 @@ if [ -d "${HOME}/.mpd" ]; then
 	mv $HOME/.mpd $HOME/.mpd-old
 fi;
 
-cp .mpd ~/
+cp -r .mpd ~/
 
 echo "----- Install nvm"
 

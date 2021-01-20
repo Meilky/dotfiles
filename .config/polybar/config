@@ -12,10 +12,10 @@ pink = #FF79C6
 salmon = #FF875F
 purple = #AF87FF
 
-[bar/purify-bar]
-;monitor = ${env:MONITOR:HDMI-1}
+[bar/purify]
+monitor = ${env:MONITOR:}
 width = 100%
-height = 27
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 5
@@ -30,22 +30,22 @@ line-color = ${colors.foreground}
 border-size = 5
 border-color = #00000000
 
-padding-left = 2
-padding-right = 2
+padding-left = 1
+padding-right = 1
 
-module-margin-left = 2
-module-margin-right = 2
+module-margin-left = 1
+module-margin-right = 1
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-0 = FiraCode Nerd Font:style=Light:size=10
+font-1 = FiraCode Nerd Font:style=Regular:size=10
+font-2 = FiraCode Nerd Font:style=Bold:size=10
 
-modules-left = i3
+modules-left = i3 xwindow
 modules-center = mpd
-modules-right = xwindow xbacklight alsa pulseaudio xkeyboard wlan eth battery date powermenu
+modules-right = xbacklight pulseaudio xkeyboard wlan eth battery date
 
 tray-position = right
-tray-padding = 2
+tray-padding = 1
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -65,7 +65,7 @@ format-prefix-underline = ${colors.red}
 label-layout = %layout%
 label-layout-underline = ${colors.red}
 
-label-indicator-padding = 2
+label-indicator-padding = 1
 label-indicator-margin = 1
 label-indicator-background = ${colors.red}
 label-indicator-underline = ${colors.red}
@@ -90,19 +90,19 @@ wrapping-scroll = false
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
-label-mode-padding = 2
+label-mode-padding = 1
 label-mode-foreground = ${colors.foreground}
 label-mode-background = ${colors.background}
 
 ; focused = Active workspace on focused monitor
+label-focused-padding = 1
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.yellow}
-label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %index%
-label-unfocused-padding = 2
+label-unfocused-padding = 1
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %index%
@@ -113,7 +113,7 @@ label-visible-padding = ${self.label-focused-padding}
 ; urgent = Workspace with urgency hint set
 label-urgent = %index%
 label-urgent-background = ${colors.red}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
 ; Separator in between workspaces
 ; label-separator = |
@@ -172,6 +172,8 @@ interval = 3.0
 format-connected = <label-connected>
 format-connected-underline = ${colors.pink}
 label-connected = %essid%
+format-connected-prefix = "con : "
+format-connected-prefix-foreground = ${colors.foreground-alt}
 
 format-disconnected = <label-disconnected>
 format-disconnected-underline = ${self.format-connected-underline}
@@ -185,7 +187,7 @@ type = internal/network
 interface = eth0
 interval = 3.0
 
-format-connected-underline = ${colors.salmon}
+format-connected-underline = ${colors.purple}
 format-connected-prefix = "con : "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
@@ -215,7 +217,9 @@ label = "%date% %time%"
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = vol : %percentage%%
+label-volume = %percentage%%
+format-volume-prefix = "vol : "
+format-volume-prefix-foreground = ${colors.foreground-alt} 
 label-volume-foreground = ${colors.foreground}
 
 label-muted = pulse muted
@@ -273,7 +277,7 @@ adapter = ADP1
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = ${colors.purple}
+format-charging-underline = ${colors.blue}
 
 format-discharging = <animation-discharging> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
@@ -317,35 +321,6 @@ ramp-0 = "cpu (warm) : "
 ramp-1 = "cpu : "
 ramp-foreground = ${colors.foreground-alt}
 
-[module/powermenu]
-type = custom/menu
-
-expand-right = true
-
-format-spacing = 1
-
-label-open = menu
-label-open-foreground = ${colors.foreground}
-label-close = cancel
-label-close-foreground = ${colors.foreground}
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
-
-menu-0-0 = reboot
-menu-0-0-exec = menu-open-1
-menu-0-1 = power off
-menu-0-1-exec = menu-open-2
-
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
-
-menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
-
 [settings]
 screenchange-reload = true
 ;compositing-background = xor
@@ -356,6 +331,6 @@ screenchange-reload = true
 
 [global/wm]
 margin-top = 5
-margin-bottom = 5
+margin-bottom = 0
 
 ; vim:ft=dosini
